@@ -4,20 +4,17 @@ declare(strict_types=1);
 
 namespace SmitBackend\ArtisanPulse;
 
-/**
- * ArtisanPulse: System Health Monitor CLI Service Provider
- *
- * @author smit-backend
- */
+use SmitBackend\ArtisanPulse\Contracts\MetricCollectorInterface;
+
 class PackageServiceProvider
 {
     public function register(): void
     {
-        // Register configuration and core bindings
+        // Bind core service singleton
     }
 
     public function boot(): void
     {
-        // Boot service routes, views, or commands
+        // Boot routes and configuration publishing
     }
 }
